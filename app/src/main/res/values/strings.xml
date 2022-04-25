@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ChatWithMe</string>
+    <string name="EnterEmail">Email id</string>
+    <string name="Signup">Sign Up</string>
+    <string name="EnterPassword">Password</string>
+    <string name="EnteName">Name</string>
+    <string name="EnterconfrimPassword">Confrim Password</string>
+    <string name="login">Login</string>
+    <string name="donthaveaaccount">Don\'t have Account ? SignUp</string>
+
+</resources>

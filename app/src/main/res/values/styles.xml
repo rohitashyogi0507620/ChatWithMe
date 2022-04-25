@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="Widget.Theme.ChatWithMe.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.ChatWithMe.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">@dimen/margin10dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/margin10dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/margin10dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/margin10dp</item>
+        <item name="android:padding">@dimen/margin10dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@style/Widget.Material3.Button">
+        <item name="cornerRadius">@dimen/margin10dp</item>
+        <item name="android:padding">@dimen/margin10dp</item>
+        <item name="android:layout_margin">@dimen/margin10dp</item>
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+    </style>
+</resources>

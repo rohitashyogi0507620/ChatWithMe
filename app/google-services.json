@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "727311135900",
+    "project_id": "chatwithme-8eacc",
+    "storage_bucket": "chatwithme-8eacc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727311135900:android:0e028596217d8eb74fa959",
+        "android_client_info": {
+          "package_name": "com.yogify.chatwithme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727311135900-4s7hsot45g0b1dftfh7l5dcgqgnqobpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW3V5U66bqoXyIhHdfvDIkXA13RHLgNA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727311135900-4s7hsot45g0b1dftfh7l5dcgqgnqobpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
