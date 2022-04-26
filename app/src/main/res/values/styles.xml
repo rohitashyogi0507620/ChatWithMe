@@ -23,4 +23,35 @@
         <item name="android:layout_margin">@dimen/margin10dp</item>
         <item name="android:textSize">@dimen/textsize_18sp</item>
     </style>
+
+    <style name="TextViewTitle" parent="">
+        <item name="android:paddingTop">@dimen/margin10dp</item>
+        <item name="android:paddingRight">@dimen/margin10dp</item>
+        <item name="android:paddingLeft">@dimen/margin10dp</item>
+        <item name="android:layout_marginTop">@dimen/margin5dp</item>
+        <item name="android:layout_marginRight">@dimen/margin10dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin10dp</item>
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+        <item name="android:textColor">@color/username_textcolor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextViewSubTitle" parent="">
+        <item name="android:paddingRight">@dimen/margin10dp</item>
+        <item name="android:paddingLeft">@dimen/margin10dp</item>
+        <item name="android:paddingBottom">@dimen/margin10dp</item>
+        <item name="android:layout_marginRight">@dimen/margin10dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin5dp</item>
+        <item name="android:layout_marginLeft">@dimen/margin10dp</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:textColor">@color/userlastmessage_textcolor</item>
+    </style>
+
+    <style name="TextViewMessage" parent="">
+        <item name="android:padding">@dimen/margin10dp</item>
+         <item name="android:layout_margin">@dimen/margin10dp</item>
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+        <item name="android:textColor">@color/message_textcolor</item>
+    </style>
+
+    <color name="message_textcolor">#383030</color>
 </resources>

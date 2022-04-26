@@ -1,6 +1,7 @@
-package com.yogify.chatwithme
+package com.yogify.chatwithme.Authantication
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
@@ -19,6 +20,9 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.ktx.Firebase
+import com.yogify.chatwithme.MainActivity
+import com.yogify.chatwithme.ModelClass.User
+import com.yogify.chatwithme.R
 import com.yogify.chatwithme.databinding.ActivitySingUpBinding
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -27,13 +31,15 @@ import java.util.regex.Pattern
 class SingUpActivity : AppCompatActivity() {
     var TAG = "SignUpActivity"
     lateinit var binding: ActivitySingUpBinding
-    lateinit var viewModule: SingUpViewModule
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar!!.hide()
+        window.statusBarColor = Color.TRANSPARENT
+        window.decorView.systemUiVisibility=View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_sing_up)
-        viewModule = ViewModelProvider(this, SingUpViewModuleFactory(1)).get(SingUpViewModule::class.java)
         auth = Firebase.auth
 
         binding.btnsignup.setOnClickListener {
@@ -115,10 +121,11 @@ class SingUpActivity : AppCompatActivity() {
 
     private fun uploadInDatabase(user: FirebaseUser?, username: String) {
         val database = FirebaseDatabase.getInstance()
-        val myRef = database.getReference(user!!.uid)
-        myRef.setValue(username)
+        val myRef = database.getReference()
+        myRef.child("Users").child(user!!.uid).setValue(User(username,user!!.email,user!!.uid))
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
+                finishAfterTransition()
                 startActivity(Intent(applicationContext, MainActivity::class.java))
             }
 

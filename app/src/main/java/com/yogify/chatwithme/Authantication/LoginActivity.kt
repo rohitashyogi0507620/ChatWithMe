@@ -1,6 +1,7 @@
-package com.yogify.chatwithme
+package com.yogify.chatwithme.Authantication
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,12 +9,12 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.yogify.chatwithme.MainActivity
+import com.yogify.chatwithme.R
 import com.yogify.chatwithme.databinding.ActivityLoginBinding
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -25,6 +26,11 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar!!.hide()
+        window.statusBarColor = Color.TRANSPARENT
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         auth = Firebase.auth
         binding.btnlogin.setOnClickListener {
@@ -92,7 +98,7 @@ class LoginActivity : AppCompatActivity() {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithEmail:failure", task.exception)
                     Toast.makeText(
-                        baseContext, "Authentication failed.",
+                        baseContext, "User Not Found",
                         Toast.LENGTH_SHORT
                     ).show()
                     updateUI(null)
@@ -102,8 +108,9 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
+        binding.progessbar.visibility = View.GONE
         if (user != null) {
-            binding.progessbar.visibility = View.GONE
+            finish()
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
     }

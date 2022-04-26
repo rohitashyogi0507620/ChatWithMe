@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/drawable/message_background.xml" value="0.1855" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/drawable/message_background_chat.xml" value="0.1855" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_chat.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_main.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_sign_up.xml" value="0.2265625" />
         <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/activity_sing_up.xml" value="0.24375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/layout_chat.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/layout/layout_listusers.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/ChatWithMe/app/src/main/res/menu/menu_home.xml" value="0.21666666666666667" />
       </map>
     </option>
   </component>

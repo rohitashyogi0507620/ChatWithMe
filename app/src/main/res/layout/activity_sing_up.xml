@@ -5,16 +5,13 @@
 
     <data>
 
-        <variable
-            name="data"
-            type="com.yogify.chatwithme.SingUpViewModule" />
-    </data>
+       </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".SingUpActivity">
+        tools:context=".Authantication.SingUpActivity">
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -12,4 +12,8 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+
+    <color name="username_textcolor">#3D3D3D</color>
+    <color name="userlastmessage_textcolor">#6A6969</color>
+
 </resources>

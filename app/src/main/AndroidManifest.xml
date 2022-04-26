@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatWithMe">
         <activity
-            android:name=".SingUpActivity"
+            android:name=".ChatActivity.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authantication.SingUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Authantication.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
